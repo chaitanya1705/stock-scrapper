@@ -24,10 +24,10 @@ type HistoricalData struct {
 }
 
 
-const alphaVantageAPIKey = "JY7A63216ER5NGBK"
+const alphaVantageAPIKey = "YOUR API KEY"
 
 func main() {
-	fmt.Println("Welcome to Stock Viewer!")
+	fmt.Println("\nWelcome to Stock Viewer!")
 	for {
 		fmt.Println("\nChoose an option:")
 		fmt.Println("1. View Stocks")
@@ -118,6 +118,10 @@ func viewHistoricalData() {
 	fmt.Println("Viewing Historical Data...")
 
 	var ticker string
+
+	
+	fmt.Scanln()
+
 	fmt.Println("Enter a symbol")
 	_, err := fmt.Scanln(&ticker)
 	if err != nil {
